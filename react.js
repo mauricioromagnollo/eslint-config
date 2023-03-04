@@ -23,6 +23,11 @@ module.exports = {
     'jsx-a11y',
     '@typescript-eslint'
   ],
+  globals: {
+    document: "readonly",
+    navigator: "readonly",
+    window: "readonly"
+  },
   rules: {
     'prettier/prettier': ["error", {
       'printWidth': 80,

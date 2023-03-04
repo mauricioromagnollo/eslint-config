@@ -11,6 +11,11 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
+  globals: {
+    document: "readonly",
+    navigator: "readonly",
+    window: "readonly"
+  },
   rules: {
     'prettier/prettier': [
       'error',
