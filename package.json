@@ -1,7 +1,7 @@
 {
   "name": "@mauricioromagnollo/eslint-config",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My personal ESLint config used by React and Node.js projects based on Standard config.",
   "author": "mauricioromagnollo",
   "license": "MIT",
