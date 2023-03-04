@@ -1,5 +1,7 @@
 # @mauricioromagnollo/eslint-config
 
+[![CI][ci-image]][ci-url] [![npm][npm-image]][npm-url] [![downloads][downloads-image]][downloads-url] [![javascript style guide][standard-image]][standard-url]
+
 > My personal ESLint config used by React and Node.js projects based on Standard config.
 
 ## **Setup**
@@ -59,3 +61,14 @@ To Node.js project:
 
 - [ESlint Docs](https://eslint.org/docs/latest/)
 - [ESlint Rules](https://eslint.org/docs/latest/rules/)
+
+<!-- BADGES -->
+
+[ci-image]: https://github.com/mauricioromagnollo/eslint-config/actions/workflows/publish.yml/badge.svg?branch=master
+[ci-url]: https://github.com/mauricioromagnollo/eslint-config/actions/workflows/publish.yml
+[npm-image]: https://img.shields.io/npm/v/eslint-config-standard.svg
+[npm-url]: https://npmjs.org/package/eslint-config-standard
+[downloads-image]: https://img.shields.io/npm/dm/eslint-config-standard.svg
+[downloads-url]: https://npmjs.org/package/eslint-config-standard
+[standard-image]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
+[standard-url]: https://standardjs.com
