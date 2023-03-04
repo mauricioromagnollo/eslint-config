@@ -1,4 +1,4 @@
-name: Publish npm package
+name: Publish Package
 on:
   push:
     branches:
@@ -15,8 +15,10 @@ jobs:
         registry-url: 'https://registry.npmjs.org'
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-    - name: Install dependencies
+    - name: Install Dependencies
       run: npm ci
+    - name: Run Tests
+      run: npm test
     - name: Publish
       run: npm publish --access public
       env:
