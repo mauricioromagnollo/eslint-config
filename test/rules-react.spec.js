@@ -12,8 +12,8 @@ describe('Rules React', () => {
   })
 
   it('should NOT allow alert()', async () => {
-    const code = 'alert(\"hello\")'
+    const code = 'alert(\'hello\')\n'
     const [lintResult] = await eslint.lintText(code)
-    assert.equal(lintResult.errorCount, 4)
+    assert.equal(lintResult.errorCount, 1)
   })
 })

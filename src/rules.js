@@ -1,17 +1,4 @@
 module.exports = {
-  'prettier/prettier': [
-    'error',
-    {
-      printWidth: 80,
-      tabWidth: 2,
-      singleQuote: true,
-      trailingComma: 'all',
-      arrowParens: 'always',
-      semi: false,
-      endOfLine: 'auto',
-      "space-before-function-paren": ["error", "always"]
-    },
-  ],
   // React
   'react/react-in-jsx-scope': 'off',
   'react/prop-types': 'off',
@@ -207,7 +194,7 @@ module.exports = {
   "semi": ["error", "never"],
   "semi-spacing": ["error", { "before": false, "after": true }],
   "space-before-blocks": ["error", "always"],
-  "space-before-function-paren": ["error", "always"],
+  "space-before-function-paren": ["error", "never"],
   "space-in-parens": ["error", "never"],
   "space-infix-ops": "error",
   "space-unary-ops": ["error", { "words": true, "nonwords": false }],

@@ -49,7 +49,6 @@ To React or Node.js project:
 - React plugin
 - React Hooks plugin
 - JSX a11y plugin
-- Prettier
 
 ## **References**
 

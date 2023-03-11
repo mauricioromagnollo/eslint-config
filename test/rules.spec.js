@@ -12,19 +12,19 @@ describe('Rules', () => {
   })
 
   it('should allow top level await', async () => {
-      const code = 'const foo = await 1\nconst bar = function () {}\nawait bar(foo)\n'
+      const code = 'const foo = await 1\nconst bar = function() {}\nawait bar(foo)\n'
       const [lintResult] = await eslint.lintText(code)
       assert.equal(lintResult.errorCount, 0)
   })
 
   it('should NOT allow console.log()', async () => {
-    const code = 'console.log(1)'
+    const code = 'console.log(1)\n'
     const [lintResult] = await eslint.lintText(code)
-    assert.equal(lintResult.errorCount, 3)
+    assert.equal(lintResult.errorCount, 1)
   })
 
   it('should allow space before function paren', async () => {
-    const code = 'const bar = function () {}\nbar(1)\n'
+    const code = 'const bar = function() {}\nbar(1)\n'
     const [lintResult] = await eslint.lintText(code)
     assert.equal(lintResult.errorCount, 0)
   })
