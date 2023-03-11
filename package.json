@@ -1,7 +1,7 @@
 {
   "name": "@mauricioromagnollo/eslint-config",
   "private": false,
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "My personal ESLint config used by React and Node.js projects based on Standard config.",
   "author": "mauricioromagnollo",
   "license": "MIT",
@@ -12,9 +12,29 @@
   "keywords": [
     "eslint",
     "eslint-config",
+    "eslintconfig",
     "npm-package",
     "reactjs",
-    "nodejs"
+    "nodejs",
+    "check",
+    "checker",
+    "code",
+    "code checker",
+    "code linter",
+    "code standards",
+    "code style",
+    "enforce",
+    "hint",
+    "jscs",
+    "jshint",
+    "lint",
+    "policy",
+    "quality",
+    "simple",
+    "style",
+    "style checker",
+    "style linter",
+    "verify"
   ],
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^5.54.0",
@@ -42,11 +62,10 @@
   },
   "devDependencies": {
     "@types/eslint": "^8.21.1",
-    "@types/tape": "^4.13.2",
     "mocha": "^10.2.0"
   },
   "scripts": {
-    "test": "npx mocha --parallel ./test/**/*.spec.js",
-    "test:watch": "npx mocha -w --parallel ./test/**/*.spec.js"
+    "test": "npx mocha --parallel -timeout 10000 ./test/**/*.spec.js",
+    "test:watch": "npx mocha -w --parallel -timeout 10000 ./test/**/*.spec.js"
   }
 }

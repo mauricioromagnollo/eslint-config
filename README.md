@@ -14,21 +14,13 @@ npm i -D eslint @mauricioromagnollo/eslint-config
 
 **Create a `.eslintrc` file extending the config:**
 
-> You can also use a `.eslintrc.js` or `.eslintrc.json` if you prefer.
+> You can also use a `.eslintrc.js` or `.eslintrc.json` if you prefer!
 
-To React project:
-
-```json
-{
-  "extends": "@mauricioromagnollo/eslint-config/react"
-}
-```
-
-To Node.js project:
+To React or Node.js project:
 
 ```json
 {
-  "extends": "@mauricioromagnollo/eslint-config/node"
+  "extends": "@mauricioromagnollo/eslint-config/"
 }
 ```
 
@@ -40,6 +32,8 @@ To Node.js project:
   "lint:fix": "npm run lint -- --fix"
 },
 ```
+
+## **Visual Studio Code Settings (Optional)**
 
 **If you're using Visual Studio Code, you can install [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) and add this script in your settings.json:**
 
@@ -59,8 +53,8 @@ To Node.js project:
 
 ## **References**
 
-- [ESlint Docs](https://eslint.org/docs/latest/)
-- [ESlint Rules](https://eslint.org/docs/latest/rules/)
+- ESLint: [Docs](https://eslint.org/docs/latest/) | [Rules](https://eslint.org/docs/latest/rules/)
+- [ESLint Config Standard](https://github.com/standard/eslint-config-standard)
 
 <!-- BADGES -->
 
