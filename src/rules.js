@@ -16,6 +16,7 @@ module.exports = {
   'jsx-a11y/role-supports-aria-props': 'warn',
   "no-alert": "error",
   // React
+  "max-len": ["error", { "code": 100 }],
   "no-var": "warn",
   "no-console": "error",
   "object-shorthand": ["warn", "properties"],
