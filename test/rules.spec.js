@@ -22,4 +22,10 @@ describe('Rules', () => {
     const [lintResult] = await eslint.lintText(code)
     assert.equal(lintResult.errorCount, 3)
   })
+
+  it('should allow space before function paren', async () => {
+    const code = 'const bar = function () {}\nbar(1)\n'
+    const [lintResult] = await eslint.lintText(code)
+    assert.equal(lintResult.errorCount, 0)
+  })
 })

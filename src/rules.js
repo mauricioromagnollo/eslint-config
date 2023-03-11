@@ -9,6 +9,7 @@ module.exports = {
       arrowParens: 'always',
       semi: false,
       endOfLine: 'auto',
+      "space-before-function-paren": ["error", "always"]
     },
   ],
   // React

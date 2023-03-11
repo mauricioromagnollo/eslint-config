@@ -17,6 +17,7 @@ describe('Basic Object Config', () => {
     const eslint = new ESLint({ baseConfig })
     const code = 'const foo = 1\nconst bar = function () {}\nbar(foo)\n'
     const [lintResult] = await eslint.lintText(code)
+    console.log(lintResult.messages)
     assert.equal(lintResult.errorCount, 0)
   })
 })

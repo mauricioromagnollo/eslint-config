@@ -1,7 +1,7 @@
 {
   "name": "@mauricioromagnollo/eslint-config",
   "private": false,
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "My personal ESLint config used by React and Node.js projects based on Standard config.",
   "author": "mauricioromagnollo",
   "license": "MIT",
@@ -65,7 +65,7 @@
     "mocha": "^10.2.0"
   },
   "scripts": {
-    "test": "npx mocha --parallel -timeout 10000 ./test/**/*.spec.js",
-    "test:watch": "npx mocha -w --parallel -timeout 10000 ./test/**/*.spec.js"
+    "test": "npx mocha -timeout 10000 ./test/**/*.spec.js",
+    "test:watch": "npx mocha -w -timeout 10000 ./test/**/*.spec.js"
   }
 }
