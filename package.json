@@ -43,9 +43,10 @@
   "devDependencies": {
     "@types/eslint": "^8.21.1",
     "@types/tape": "^4.13.2",
-    "tape": "^5.6.3"
+    "mocha": "^10.2.0"
   },
   "scripts": {
-    "test": "npx tape test/*.js"
+    "test": "npx mocha --parallel ./test/**/*.spec.js",
+    "test:watch": "npx mocha -w --parallel ./test/**/*.spec.js"
   }
 }
